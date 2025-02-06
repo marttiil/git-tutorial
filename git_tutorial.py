@@ -12,7 +12,7 @@ class gitWizard:
               "\nBranches are independent lines of work, stemming from the original database",
               "\n\nBRANCHING IN TEAMS\n",
               "\nIn professional setting, teams usually have own guidelines with branching.",
-              "\nAs a new wizard candidate, you should ask what are the team practices with branching.")
+              "\nAs a new wizard candidate, you should ask what are the team practices with branching.a")
 
 
 wizard = gitWizard(1000)
