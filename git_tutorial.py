@@ -86,7 +86,7 @@ class gitWizard:
               "\nFew ways: git checkout <commit ID>/HEAD^/tag. Tag is supposed ot be immutable and are not updated as branches.",
               "\nThat's why this happened to you when you tried git checkout origin",
               "\n\nWHAT TO DO IF THIS HAPPENS?\n",
-              "\nTake a deep breath, and read the CLI instructions :)")
+              "\nTake a deep breath, and read the CLI instructions :) Easiest way is undo by git switch -, where you move to previous branch.")
 
     def cast_a_spell(self):
         spellNo = randrange(3)
