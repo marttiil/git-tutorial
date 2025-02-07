@@ -78,6 +78,11 @@ class gitWizard:
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
+    def tell_about_detached_head(self):
+        print("HEAD is a pointer to the current commit. It is used as a reference point when you want to see last changes to your working copy with git diff",
+              "\nThings get complicated when you checkout something that is not a branch. This happens because it CAN BE useful sometimes to switch from branch to commit itself.",
+              "\nWhen you commit here, they will end up in the garbage sooner or later. They are not important.")
+
     def cast_a_spell(self):
         spellNo = randrange(3)
 
