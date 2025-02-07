@@ -12,7 +12,10 @@ class gitWizard:
               "\nBranches are independent lines of work, stemming from the original database",
               "\n\nBRANCHING IN TEAMS\n",
               "\nIn professional setting, teams usually have own guidelines with branching.",
-              "\nAs a new wizard candidate, you should ask what are the team practices with branching.a")
+              "\nAs a new wizard candidate, you should ask what are the team practices with branching."
+              "\n\nBranchers are in fact simply pointers to a specific commit. Branch early, branch often.",
+              "\nBecause of being a pointer, there is no storage/memory overhead with making them.",
+              "\nBranch is just pointing to a specific commit in time.")
         
     def tell_about_push(self):
         print("\n Push is a command to push local commits to a remote repository.",
@@ -37,6 +40,22 @@ class gitWizard:
         "\nbut are working on something that might break if you update your files.",
         "\nTo integrate the commits into your current branch, you must use git merge afterwards.")
 
+    def tell_about_diff(self):
+        print("git diff compares two commits (snapshots of repo) to each other and shows differences.")
+
+    def tell_about_checkout(self):
+        print("Git checkout is used with branches. The command is bit complex...",
+              "\nRemember,that when you before you commit, you need to stage stuff.",
+              "\nWhen you call checkout, this staging or indexing area is filled.")
+
+    def tell_about_commits(self):
+        print("Git repo is basically a large database of commits. Each commit has a big ugly hash",
+              "\nCommit contains also full snapshot of every file. They also store metadata, info about the commit (email of committer etc.)",
+              "\nAnd very importantly, each commit stores a list of previous commit hash IDs.",
+              "\nMost commits just store hash ID of the previous commit.",
+              "\nAll info within commit is read-only, non-mutable."
+              "\n\nGreat source: https://stackoverflow.com/questions/69826597/what-does-git-checkout-do")
+
     def tell_about_rebase(self):
         # TODO : tell about rebasing...
         print("")
@@ -51,6 +70,9 @@ class gitWizard:
 
     def tell_about_common_git_workflows(self):
         print("")
+
+    def tell_cool_stuff_about_git(self):
+        print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
     def cast_a_spell(self):
         spellNo = randrange(3)
