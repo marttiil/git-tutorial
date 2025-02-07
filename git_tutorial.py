@@ -44,7 +44,7 @@ class gitWizard:
         print("git diff compares two commits (snapshots of repo) to each other and shows differences.")
 
     def tell_about_checkout(self):
-        print("Git checkout is used with branches. The command is bit complex...",
+        print("Git checkout is used to switch between branches. The command is bit complex...",
               "\nRemember,that when you before you commit, you need to stage stuff.",
               "\nWhen you call checkout, this staging or indexing area is filled.")
 
@@ -57,8 +57,12 @@ class gitWizard:
               "\n\nGreat source: https://stackoverflow.com/questions/69826597/what-does-git-checkout-do")
 
     def tell_about_rebase(self):
-        # TODO : tell about rebasing...
-        print("HAHAHAHAH! MERGE CONFLICT APPEARS!")
+        print("Rebasing is an alternative to merge with clear distinctions.",
+              "\nRebasing essentially takes a set of commits, \"copies\" them, and plops them down somewhere else.",
+              "\nPro of rebase: The commit log / history of the repository will be a lot cleaner if only rebasing is allowed!",
+              "\nThink so that without rebase, commit history seems that the work was done sequentially, and with merge in parallel.",
+              "Remember that rebase changes git history. That's an important difference to git merge.",
+              "\n\nPRACTICALLY, you need to move to branch you want to rebase and use command git rebase <name-of-target-branch>")
 
     def tell_about_pull_request(self):
         # TODO : tell about pull_requests
@@ -73,6 +77,16 @@ class gitWizard:
 
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
+
+    def tell_about_detached_head(self):
+        print("HEAD is a pointer to the current commit. It is used as a reference point when you want to see last changes to your working copy with git diff",
+              "\nThings get complicated when you checkout something that is not a branch. This happens because it CAN BE useful sometimes to switch from branch to commit itself.",
+              "\nWhen you commit here, they will end up in the garbage sooner or later. They are not important.",
+              "\n\nHOW TO END UP HERE?\n",
+              "\nFew ways: git checkout <commit ID>/HEAD^/tag. Tag is supposed ot be immutable and are not updated as branches.",
+              "\nThat's why this happened to you when you tried git checkout origin",
+              "\n\nWHAT TO DO IF THIS HAPPENS?\n",
+              "\nTake a deep breath, and read the CLI instructions :) Easiest way is undo by git switch -, where you move to previous branch.")
 
     def cast_a_spell(self):
         spellNo = randrange(3)
