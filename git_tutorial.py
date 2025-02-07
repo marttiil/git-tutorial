@@ -72,6 +72,9 @@ class gitWizard:
         print("You can delete a branch by git branch -d <branch name> . This works if branch has been merged.",
               "If not, you can force delete by changing -d to -D. BE CAREFUL HERE!")
 
+    def what_is_HEAD(self):
+        print("HEAD is you. HEAD is pointer. HEAD pointer. HEAD points where you are looking. Usually this is a branch.")
+
     def tell_about_merge(self):
         # TODO: Tell about merge
         print("")
