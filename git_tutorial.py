@@ -81,7 +81,12 @@ class gitWizard:
     def tell_about_detached_head(self):
         print("HEAD is a pointer to the current commit. It is used as a reference point when you want to see last changes to your working copy with git diff",
               "\nThings get complicated when you checkout something that is not a branch. This happens because it CAN BE useful sometimes to switch from branch to commit itself.",
-              "\nWhen you commit here, they will end up in the garbage sooner or later. They are not important.")
+              "\nWhen you commit here, they will end up in the garbage sooner or later. They are not important.",
+              "\n\nHOW TO END UP HERE?\n",
+              "\nFew ways: git checkout <commit ID>/HEAD^/tag. Tag is supposed ot be immutable and are not updated as branches.",
+              "\nThat's why this happened to you when you tried git checkout origin",
+              "\n\nWHAT TO DO IF THIS HAPPENS?\n",
+              "\nTake a deep breath, and read the CLI instructions :)")
 
     def cast_a_spell(self):
         spellNo = randrange(3)
