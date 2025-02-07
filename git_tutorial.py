@@ -60,7 +60,9 @@ class gitWizard:
         print("Rebasing is an alternative to merge with clear distinctions.",
               "\nRebasing essentially takes a set of commits, \"copies\" them, and plops them down somewhere else.",
               "\nPro of rebase: The commit log / history of the repository will be a lot cleaner if only rebasing is allowed!",
-              "\nThink so that without rebase, commit history seems that the work was done sequentially, and with merge in parallel.")
+              "\nThink so that without rebase, commit history seems that the work was done sequentially, and with merge in parallel.",
+              "Remember that rebase changes git history. That's an important difference to git merge.",
+              "\n\nPRACTICALLY, you need to move to branch you want to rebase and use command git rebase <name-of-target-branch>")
 
     def tell_about_pull_request(self):
         # TODO : tell about pull_requests
