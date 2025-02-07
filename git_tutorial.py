@@ -68,6 +68,10 @@ class gitWizard:
         # TODO : tell about pull_requests
         print("")
 
+    def how_to_delete_branch(self):
+        print("You can delete a branch by git branch -d <branch name> . This works if branch has been merged.",
+              "If not, you can force delete by changing -d to -D. BE CAREFUL HERE!")
+
     def tell_about_merge(self):
         # TODO: Tell about merge
         print("")
