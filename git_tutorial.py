@@ -44,7 +44,7 @@ class gitWizard:
         print("git diff compares two commits (snapshots of repo) to each other and shows differences.")
 
     def tell_about_checkout(self):
-        print("Git checkout is used with branches. The command is bit complex...",
+        print("Git checkout is used to switch between branches. The command is bit complex...",
               "\nRemember,that when you before you commit, you need to stage stuff.",
               "\nWhen you call checkout, this staging or indexing area is filled.")
 
@@ -57,8 +57,9 @@ class gitWizard:
               "\n\nGreat source: https://stackoverflow.com/questions/69826597/what-does-git-checkout-do")
 
     def tell_about_rebase(self):
-        # TODO : tell about rebasing...
-        print("HAHAHAHAH! MERGE CONFLICT APPEARS!")
+        print("Rebasing is an alternative to merge with clear distinctions.",
+              "\nRebasing essentially takes a set of commits, \"copies\" them, and plops them down somewhere else.",
+              "\nPro of rebase: The commit log / history of the repository will be a lot cleaner if only rebasing is allowed!")
 
     def tell_about_pull_request(self):
         # TODO : tell about pull_requests
