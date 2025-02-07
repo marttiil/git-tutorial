@@ -29,8 +29,13 @@ class gitWizard:
               "\ngit push --force # ONLY USE FORCE AFTER FETCH-REBASE")
         
     def tell_about_fetch(self):
-        # TODO: tell about fetching...
-        print("")
+        print("In the simplest terms, git pull does a git fetch followed by a git merge.",
+        "\n\ngit fetch gathers any commits from the target branch that do not exist",
+        "\nin the current branch and stores them in your local repository.",
+        "\nHowever, it does not merge them with your current branch.",
+        "\nThis is particularly useful if you need to keep your repository up to date,",
+        "\nbut are working on something that might break if you update your files.",
+        "\nTo integrate the commits into your current branch, you must use git merge afterwards.")
 
     def tell_about_rebase(self):
         # TODO : tell about rebasing...
