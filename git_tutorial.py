@@ -58,7 +58,7 @@ class gitWizard:
 
     def tell_about_rebase(self):
         # TODO : tell about rebasing...
-        print("")
+        print("HAHAHAHAH! MERGE CONFLICT APPEARS!")
 
     def tell_about_pull_request(self):
         # TODO : tell about pull_requests
