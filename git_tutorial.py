@@ -79,6 +79,10 @@ class gitWizard:
         # TODO: Tell about merge
         print("")
 
+    def tell_about_git_revert_and_reset(self):
+        print("Git revert is likely better with team work. It creates anti-commit that undos the other one",
+              "\nwhile maintaining the git history.")
+
     def tell_about_common_git_workflows(self):
         print("")
 
