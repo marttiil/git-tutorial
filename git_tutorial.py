@@ -82,8 +82,11 @@ class gitWizard:
     def tell_about_git_revert_and_reset(self):
         print("Git revert is likely better with team work. It creates anti-commit that undos the other one",
               "\nwhile maintaining the git history.",
-              "\nGit reset --hard deletes target commit inaccessible (and invisible in history). It can still be recovered git reflog...",
-              "TRY TO DELETE THIS PERMANTENTLY!")
+              "\nGIT RESET\n\nGit reset --hard deletes target commit inaccessible (and invisible in history). It can still be recovered git reflog...",
+              "\nIf work was not commited, git reset --hard will delete permanently the changes (it clears indexing/staging area)",
+              "\nBut if commited, you can use git reflog to navigate back to old commits for sure.",
+              "\ngit reset --soft is similar but it does not empty staging area (new changes). This can be good",
+              "\nIf you made a commit but realized you need to change something before committing.")
 
     def tell_about_common_git_workflows(self):
         print("")
