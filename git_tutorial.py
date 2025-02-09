@@ -96,9 +96,14 @@ class gitWizard:
               "\n\nHOW TO END UP HERE?\n",
               "\nFew ways: git checkout <commit ID>/HEAD^/tag. Tag is supposed ot be immutable and are not updated as branches.",
               "\nThat's why this happened to you when you tried git checkout origin",
-              "\n\nWHAT TO DO IF THIS HAPPENS?\n",
-              "\nTake a deep breath, and read the CLI instructions :) Easiest way is undo by git switch -, where you move to previous branch.")
-
+              "\n\nWHAT TO DO IF THIS HAPPENS ACCIDENTALLY?\n",
+              "\nTake a deep breath, and read the CLI instructions :) Easiest way is undo by git switch -, where you move to previous branch.",
+              "\n\nWHEN IS DETACHED HEAD USELF AND WHY?\n",
+              "\nLet's say you want to inspect second latest commit. You type either two times git checkout HEAD^ OR git checkout HEAD~2",
+              "\nNow you have view of the commit. Fast and simple. Let's say then you want to discard the two latest commits and work based on this one.",
+              "\nYou would create a branch based on this: git checkout -b new-branch HEAD~2",
+              "\nYou could also want to rest the last two commits. Here you need to study more rest functions but you could use git reset --soft/hard HEAD~2")
+        
     def cast_a_spell(self):
         spellNo = randrange(3)
 
@@ -110,6 +115,6 @@ class gitWizard:
             print("\nWizard casted a spell.\nAll you worries were removed for the next 24 hours. Have a nice day.")
 
 wizard = gitWizard(1000)
-wizard.tell_about_branching()
+wizard.tell_about_detached_head()
 
 wizard.cast_a_spell()
