@@ -81,7 +81,8 @@ class gitWizard:
 
     def tell_about_git_revert_and_reset(self):
         print("Git revert is likely better with team work. It creates anti-commit that undos the other one",
-              "\nwhile maintaining the git history.")
+              "\nwhile maintaining the git history.",
+              "\nGit reset --hard deletes target commit inaccessible (and invisible in history). It can still be recovered git reflog...")
 
     def tell_about_common_git_workflows(self):
         print("")
