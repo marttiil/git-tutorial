@@ -91,6 +91,9 @@ class gitWizard:
     def tell_about_common_git_workflows(self):
         print("")
 
+    def tell_about_git_cherrypick(self):
+        print("")
+
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
