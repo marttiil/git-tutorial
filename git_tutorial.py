@@ -92,8 +92,12 @@ class gitWizard:
         print("")
 
     def tell_about_git_cherrypick(self):
-        print("")
-
+        print("git cherry-pick commit1 commit2 commit3 ... commitN",
+              "\nPowerful way to tell that you want to pick individual commits to your current commit.",
+              "\nIt is a command that allows you to apply the changes from a specific commit onto your current branch.",
+              "\nInstead of merging or rebasing entire branches, cherry-picking allows you to select individual commits.",
+              "\n\nTRY NOW git rebase -i HEAD~2 instead."
+              "\nEka lause")
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
