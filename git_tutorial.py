@@ -115,6 +115,8 @@ class gitWizard:
             print("\nWizard casted a spell.\nAll you worries were removed for the next 24 hours. Have a nice day.")
         elif spellNo == 3:
             print("Test spell....")
+        elif spellNo == 4:
+            print("Test spell 2...")
 
 wizard = gitWizard(1000)
 wizard.tell_about_detached_head()
