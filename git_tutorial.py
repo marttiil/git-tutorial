@@ -97,7 +97,8 @@ class gitWizard:
               "\nIt is a command that allows you to apply the changes from a specific commit onto your current branch.",
               "\nInstead of merging or rebasing entire branches, cherry-picking allows you to select individual commits.",
               "\n\nTRY NOW git rebase -i HEAD~2 instead."
-              "\nEka lause")
+              "\nEka lause",
+              "\nToka lause")
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
