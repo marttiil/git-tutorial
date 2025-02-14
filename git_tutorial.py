@@ -98,7 +98,10 @@ class gitWizard:
               "\nInstead of merging or rebasing entire branches, cherry-picking allows you to select individual commits.",
               "\n\nTRY NOW git rebase -i HEAD~2 instead.",
               "\n\nTRY ALSO git rebase -i HEAD~2 instead. ",
-              "\n\nCASE: You made several debugging commits. You want to at last only commit the last commit with main. What to do?")
+              "\n\nCASE: You made several debugging commits. You want to at last only commit the last commit with main. What to do?",
+               "\ngit checkout main",
+              "\ngit cherry-pick bugFix. Done!",
+              "\nOR you can do git rebase -i HEAD~3 and drop the two previous ones.")
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
