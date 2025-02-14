@@ -101,7 +101,8 @@ class gitWizard:
               "\n\nCASE: You made several debugging commits. You want to at last only commit the last commit with main. What to do?",
                "\ngit checkout main",
               "\ngit cherry-pick bugFix. Done!",
-              "\nOR you can do git rebase -i HEAD~3 and drop the two previous ones.")
+              "\nOR you can do git rebase -i HEAD~3 and drop the two previous ones.",
+              "\nAdding some fluff text here...")
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
