@@ -96,9 +96,9 @@ class gitWizard:
               "\nPowerful way to tell that you want to pick individual commits to your current commit.",
               "\nIt is a command that allows you to apply the changes from a specific commit onto your current branch.",
               "\nInstead of merging or rebasing entire branches, cherry-picking allows you to select individual commits.",
-              "\n\nTRY NOW git rebase -i HEAD~2 instead."
-              "\nEka lause",
-              "\nToka lause")
+              "\n\nTRY NOW git rebase -i HEAD~2 instead.",
+              "\n\nTRY ALSO git rebase -i HEAD~2 instead. ",
+              "\n\nCASE: You made several debugging commits. You want to at last only commit the last commit with main. What to do?")
     def tell_cool_stuff_about_git(self):
         print("\n Cool fact 1 : Git repo is to a large extent just a big database of commits.")
 
